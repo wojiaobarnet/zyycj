@@ -1,0 +1,43 @@
+<!--
+"""
+-------------------------------------------------
+Project Name:   zyycj
+File Name：     index.html
+Description :
+Author :        nanly
+date：          2018-08-30 22:37
+-------------------------------------------------
+Change Activity:
+2018-08-30:
+IDE:
+PyCharm:
+-------------------------------------------------
+"""
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>普通用户首页</title>
+    <link rel="stylesheet" href="{% static 'css/CommonUser/index.min.css' %}">    <!-- 在dist下找-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_788770_1m0y120911e.css">  <!--首页右上角登录人的icon-->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+</head>
+
+<body>
+<header class="header">    <!--header页眉-->      
+	<div class='container'>
+		<div class="logo-box">  <!--logo盒子-->
+			<a href="/"></a>
+		</div>
+		<div class='auth-box'>  <!-- 登录注册图标 ,然后去scss文件修改 -->
+			<i class="icon-person iconfont"></i>          <!--i标签,倾斜显示,iconfont标签在scss中可见-->
+			<a href="#">登录</a> /
+			<a href="#">注册</a>
+		</div>
+	</div>
+<p style='font-size:30px ;color:pink'></p>
+</header><!-- /header -->
+</body>
+</html>

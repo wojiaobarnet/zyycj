@@ -1,0 +1,52 @@
+@import 'init.scss';
+@import 'constants.scss';
+
+
+$navHeight: 64px;
+
+body{
+	background: gray;
+}
+
+
+/*导航条*/
+.header{
+	width: 100%;   /*长度跟随浏览器*/
+	height: $navHeight;
+	background: #3a3a3a;
+
+	.container{           /*导航栏容器*/
+		width: $pageWidth;
+		height: 100%;
+		margin: 0 auto;     /*居中*/
+		overflow:hidden;   /*溢出的修剪掉*/
+
+		.logo-box{       /*LOGO盒子*/
+			width: 140px;
+			height: 49px;
+			background: url(http://pic115.nipic.com/file/20161111/10841106_091525355033_2.jpg) /
+			no repeat;
+			margin-top: 8px;
+			float: left;  /*图片向左浮动*/
+
+		}
+		.auth-box{
+			float: right; 	/*图片向右浮动*/
+			line-height: $navHeight;  /*导航条高度*/
+			height: $navHeight;
+			color: #fff;
+			font-size: 20px;
+			.iconfont{
+				color: #fff;
+				font-size: 20px;
+			}
+			a{
+				color:#fff;
+				font-size: 20px
+			}
+
+		}
+	}
+
+  
+}

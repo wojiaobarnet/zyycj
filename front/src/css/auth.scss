@@ -1,0 +1,163 @@
+@import "constants.scss";
+@import "init.scss";
+body{
+  background: blueviolet;
+
+}
+
+
+.btn{
+  font-size: 22px;
+  margin: 10px;
+  //float: right;
+}
+.mask-wrapper{
+    position: fixed;  /*fixed永远固定在浏览器上*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);  /*alpha通道（0，1）透明度*/
+    /*overflow: scroll;*/
+    overflow-y: scroll;
+    display: none;
+
+
+    .auth-wrapper{
+            $authWrapperWidth: 400px;
+            $authWrapperHeight: 515px;
+			width: $authWrapperWidth;
+			height: $authWrapperHeight;
+			margin: 40px auto;
+			//background: #fff;
+
+			.close-wrapper{     /*关闭层*/
+				  width: 100%;
+				  height: 40px;
+				  background: white;
+
+                  .close-btn{
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    float: right;
+                    margin-top: 10px;
+                    color: black;
+                    font-size: 18px;
+                    cursor: pointer; //悬停变成小手
+                  }
+
+			}
+
+			.auth-inner-wrapper{
+				  width: 100%;
+				  height: $authWrapperHeight - 40px;
+				  //background: #fff;
+				  pisition: relative;
+                  overflow: hidden;
+
+				  .scroll-wrapper{
+					    width: $authWrapperWidth*2;
+					    //height: 100%;
+					    position: relative;      /*课件是absolute*/
+                        top: 0;
+					    left: 0;
+					    background: white;
+				  }
+                        .auth-group{
+                            width: $authWrapperWidth;
+                            height: 100%;
+                            padding: 0 20px 20px;
+                            box-sizing: border-box;
+
+                            .top-group{
+                                height: 36px;
+                                border-bottom: 1px solid;  /*设置下边框的属性*/
+                                font-size: 20px;
+                                line-height: 36px;
+
+                                .title{
+                                  float: left;
+                                  color: black;
+                                  border-bottom: 3px solid deepskyblue;
+                                }
+                                .switch{
+                                  float: right;
+                                  color: red;
+
+                                }
+
+                          }
+                        }
+                            .form-group{
+                                margin-top: 20px;
+                                .input-group{
+                                    margin-bottom: 20px;  /*与底部间距*/
+                                    height: 40px;
+
+                                }
+                                    .form-control{       /*输入框*/
+                                        border: 1px solid #ccc;
+                                        padding: 10px;  /*内边距，输入框*/
+                                        width: 100%;
+                                        height: 40px;
+                                        box-sizing: border-box;
+                                        outline: none;    /*鼠标点击输入框后，输入框不会显示其他颜色*/
+                                    }
+
+                                    .remember-label{
+                                      font-size: 14px;
+                                    }
+                                    .submit-btn{
+                                      width: 100%;
+                                      height: 40px;
+                                      background: deepskyblue;
+                                      color: #fff;
+                                      border: none;
+                                      cursor: pointer;
+                                    }
+
+                                    .short-input-group{
+                                      width: 240px;
+                                      float: left;
+                                    }
+                                    .input-group-addon{
+                                      float: right;
+                                      width: 100px;
+                                      cursor: pointer;
+
+                                      .sms-captcha-btn{
+                                          font-size: 14px;/*短信验证码*/
+                                          width: 100%;
+                                          height: 40px;
+                                          border: 1px solid #000000;
+                                          color: #6170de;
+                                          display: inline-block;
+                                          text-align: center;
+                                          line-height:40px;
+                                          box-sizing:border-box;
+                                        }
+
+                                    }
+
+                            }
+
+
+
+                        .signin-group{
+                          float: left;
+                          //width: ;
+                          background: #fff;
+
+                        }
+                        .signup-group{
+                          float: left;
+                          background: white ;
+
+                        }
+			}
+
+		}
+	}
+
+

@@ -1,0 +1,113 @@
+<!--
+"""
+-------------------------------------------------
+   Project Name:   zyycj
+   File Name：     auth.html
+   Description :
+   Author :        nanly
+   date：          2018-09-01 17:34
+-------------------------------------------------
+   Change Activity:
+                   2018-09-01:
+   IDE:
+                   PyCharm:
+-------------------------------------------------
+"""
+<!-- 登录/注册页面 -->
+<!--同时建立一个同名的SCSS文件-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../../dist/css/auth.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_788770_6waob4nzfdy.css">
+    <script src="../../dist/js/jquery-3.3.1.min.js"></script>
+    <script src="../../dist/js/auth.min.js"></script>
+</head>
+<body>
+    <button id='btn' class="btn">登录/注册</button>
+    <div class="mask-wrapper">   <!--注册/登陆的大遮罩层-->
+        <div class="auth-wrapper">          <!--注册/登陆层-->
+            <div class="close-wrapper">       <!--关闭层-->
+                <span class="close-btn icon-close iconfont"></span>  <!--关闭按钮-->
+            </div>
+            <div class="auth-inner-wrapper">  <!--内遮罩层-->
+            	<div class="scroll-wrapper">
+                    <!--登陆组-->
+            	  	<div class="signin-group auth-group">
+                        <div class="top-group">  <!--顶层-->
+                            <span class="title">请登录</span>
+                            <a href="javascript:void(0);" class="switch">立即注册></a>
+                        </div> <!--顶层结束-->
+                        <!--登陆表单组-->
+                        <div class="form-group">
+                            <!--登陆输入组-->
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="telephone" placeholder="请输入手机号码">
+                            </div><!--登陆输入组结束-->
+                                                        <!--注册输入组-->
+                            <div class="input-group">
+                                <input type="password" class="form-control" name="password" placeholder="请输入密码">
+                            </div>
+                            <!--记住我勾选组-->
+                            <div class="input-group">
+                                <label class="remember-label"><!--标签组-->
+                                    <input type="checkbox" name="remember" value="1">
+                                    记住我
+                                </label>
+                            </div>
+                            <!--提交组-->
+                            <div class="input-group">
+                                <input type="submit" class="submit-btn" value="立即登陆">
+                            </div>
+                        </div>
+                    </div>
+                                        <!--注册组-->
+                    <div class="signup-group auth-group">
+                        <div class="top-group"><!--注册顶层-->
+                            <span class="title">请注册</span>
+                            <a href="javascript: void(0);" class="switch">立即登陆></a>
+                        </div><!--顶层结束-->
+                        <div class="form-group">
+                            <div class="input-group"> <!--注册表单组-->
+                                <input type="text" class="form-control" name="telephone" placeholder="手机号码">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="username" placeholder="用户名">
+                            </div>
+                            <div class="input-group">
+                                <div class="short-input-group">
+                                    <input type="text" class="form-control" name="img_captcha" placeholder="图形验证码">
+                                </div>
+                                <div class="input-group-addon">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="password1" placeholder="密码">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="password2" placeholder="确认密码">
+                            </div>
+                            <div class="input-group">
+                                <div class="short-input-group">
+                                    <input type="text" class="form-control" name="sms_captcha" placeholder=短信验证码>
+                                </div>
+                                <div class="input-group-addon">
+                                    <span class="sms-captcha-btn">发送验证码</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <input type="submit" class="submit-btn" value="立即注册">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
